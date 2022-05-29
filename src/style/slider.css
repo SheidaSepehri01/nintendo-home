@@ -1,0 +1,39 @@
+.slider {
+  height: 40%;
+  margin-top: 0.4em;
+}
+
+.full-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.thumb {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 20%;
+  overflow: auto;
+}
+
+.thumb img {
+  height: 100%;
+  width: 20%;
+  border: none;
+  margin-right: 0.5em;
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 0.2em;
+}
+
+.thumb img:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.thumb .selected {
+  opacity: 1;
+  border-bottom: 3px solid #e60012;
+  cursor: pointer;
+}
+/*# sourceMappingURL=slider.css.map */

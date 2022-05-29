@@ -1,0 +1,77 @@
+.show {
+  display: contents;
+}
+
+.hide {
+  display: none;
+}
+
+.tmenu {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.tmenu .tmenu-back {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.751);
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: -webkit-center;
+}
+
+.tmenu .tmenu-back .close-btn {
+  color: red;
+  display: block;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 1em;
+  font-size: calc(1em + 1vw);
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+}
+
+.tmenu .tmenu-back .close-btn:hover {
+  color: #002fff;
+}
+
+.tmenu .tmenu-back .m-box {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.3em;
+  background: #fff;
+  border-radius: 1em;
+  padding: 0px;
+  position: fixed;
+  bottom: 2em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 96%;
+  max-width: 440px;
+}
+
+.tmenu .tmenu-back .m-box button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  margin: 2px;
+}
+
+.tmenu .tmenu-back .m-box button:hover {
+  color: #434242;
+  cursor: pointer;
+  font-weight: bold;
+}
+/*# sourceMappingURL=ToolBar.css.map */

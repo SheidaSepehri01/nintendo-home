@@ -1,0 +1,169 @@
+@import "variables/colors.scss";
+@import "variables/var.scss";
+
+@keyframes buttonHover {
+
+  0%{ background:$red; height: 4em; margin: 0; border-radius: 0.3em;}
+  25% { background: rgb(117, 9, 9); height: 3em; margin:1em 0em 1em 0em; border-radius: 0.3em;}
+  50% { background: rgb(117, 9, 9); height: 4em; margin: 0; border-radius: 0.3em;}
+  75% { background: rgb(117, 9, 9); height: 3em; margin : 1em 0em 1em 0em; border-radius: 0.3em;}
+  100%{ background: rgb(117, 9, 9); height: 4em; margin: 0; border-radius: 0.3em;}
+
+}
+@keyframes spark {
+  0%{display: contents;}
+  50%{display: contents;}
+  100%{display: none;}
+}
+.hide{display: none;}
+.show{display: contents;}
+.Purchase {
+  padding: 0;
+  width: 100%;
+  color: $dgray;
+  
+  span {
+    color: gray;
+    border-bottom: 2px solid $red;
+    margin: 0;
+    font-size: $font-size;
+  }
+  h3 {
+    color: $dgray;
+    padding: 0;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    button,
+    button a {
+      color: $red;
+      text-decoration: none;
+      display: inline;
+      padding: 0;
+      border: 0;
+      background-color: #fff;
+    }
+
+    p {
+      display: inline;
+      font-size: $lg-font;
+      padding: 0;
+      font-weight: bold;
+    }
+
+    h1 {
+      display: inline;
+    }
+  
+  }
+  .points {
+    display: flex;
+    align-items: center;
+    .gold-coin {
+      display: inline;
+      height: 0.7em;
+      margin-left: 00.5em;
+    }
+    p {
+      display: inline;
+      font-size: $s-font;
+      padding: 0 1em;
+    }
+  }
+  .download {
+    background-color: $red;
+    width: 100%;
+    border: none;
+    a {
+      color: #fff;
+      font-size: $lg-font;
+      text-decoration: none;
+      padding: 0.4em;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+    }
+    svg {
+      width: 20px;
+      margin: 0.3em;
+    }
+  }
+  p {
+    display: inline;
+    font-size: $s-font;
+    padding: 0 ;
+  }
+.sparks , .spark :active{
+animation: spark;
+}
+}
+.GameInfo {
+  color: $dgray;
+  font-size: $font-size;
+  margin: 0em;
+  
+  button{
+    color: $red;
+    border: none;
+    background: none;
+    align-items: center;
+    font-size: $font-size;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+  svg{
+    height: 00.9em;
+  }
+  }
+  button:hover{
+    cursor: pointer;
+    color:rgb(131, 7, 7);
+  }
+  .button-box{
+    height: 5em;
+    width: 100%;
+  }
+  .exploreTG {
+    background-color: $red;
+    border: none;
+    display: block;
+    box-sizing: border-box;
+    width: 75%;
+    height:3em; 
+    margin: 1em 0em 1em 0em;
+     a{ 
+      color: #fff;
+      font-size: calc( 0.7em + 1vw);
+      font-weight: bold;
+      text-decoration: none;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      display: inline-flex;
+      border-radius: 0.3em;
+      width: 100%;
+      height: 100%;
+    }
+  }
+.exploreTG:hover {
+  cursor: pointer;
+  background:rgb(131, 7, 7);
+  animation: buttonHover 1s linear 0s 2;
+  animation-fill-mode: forwards;
+  transition: all 300ms ease-in-out 0s;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gamePic{
+  height: 40%;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+}

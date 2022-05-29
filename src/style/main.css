@@ -1,0 +1,127 @@
+body, .App, .root {
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: contents;
+}
+
+.header {
+  position: fixed;
+  background-color: #e60012;
+  height: 6%;
+  width: 100%;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header a {
+  height: 100%;
+  color: #ffffff;
+  margin: 0.5em;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  width: 20%;
+}
+
+.headerMenu {
+  margin-top: calc(2em + 1vw);
+  padding: 0;
+  width: 100%;
+}
+
+.headerMenu button, .headerMenu a {
+  text-decoration: none;
+  border: none;
+  color: #959595;
+  background-color: #fff;
+  font-size: calc(0.5em + 1vw);
+}
+
+.headerMenu a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.headerMenu .selected {
+  cursor: pointer;
+  color: black;
+}
+
+.Toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 96%;
+  max-width: 440px;
+  display: block;
+  margin-bottom: calc(0.5em + 1vh);
+}
+
+.Toolbar .toolbar-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: white;
+  border-radius: 1.9em;
+  height: 2.1em;
+  -webkit-box-shadow: -1px 2px 4px #938282;
+          box-shadow: -1px 2px 4px #938282;
+}
+
+.Toolbar .toolbar-box .search {
+  background-color: #e60012;
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  bottom: 0.5em;
+  position: relative;
+}
+
+.Toolbar .toolbar-box .search svg {
+  color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Toolbar .toolbar-box button {
+  border: none;
+  background-color: #fff;
+  color: gray;
+}
+
+.Toolbar .toolbar-box button svg {
+  height: 1.3em;
+  margin: 0;
+  color: #434242;
+}
+
+.Main-box .Purchase, .Main-box .GameInfo {
+  padding: 0em 0.5rem;
+}
+/*# sourceMappingURL=main.css.map */
