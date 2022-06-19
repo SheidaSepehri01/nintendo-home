@@ -21,29 +21,13 @@
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.751);
+  background-color: rgba(58, 58, 58, 0.62);
   position: fixed;
   top: 0;
   left: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
   text-align: -webkit-center;
-}
-
-.tmenu .tmenu-back .close-btn {
-  color: red;
-  display: block;
-  float: right;
-  position: relative;
-  top: 0;
-  right: 1em;
-  font-size: calc(1em + 1vw);
-  background-color: transparent;
-  border: none;
-  font-weight: bolder;
-}
-
-.tmenu .tmenu-back .close-btn:hover {
-  color: #002fff;
 }
 
 .tmenu .tmenu-back .m-box {
@@ -52,26 +36,59 @@
   gap: 0.3em;
   background: #fff;
   border-radius: 1em;
-  padding: 0px;
+  padding: 1em 0px;
   position: fixed;
   bottom: 2em;
   left: 50%;
+  color: #434242;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 96%;
+  width: 82%;
+  overflow-y: auto;
   max-width: 440px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.tmenu .tmenu-back .m-box .close-btn {
+  color: red;
+  float: right;
+  font-size: calc(0.5em + 1vw);
+  border: none;
+  position: absolute;
+  background-color: #938a8a4c;
+  border: 1px solid;
+  border-radius: 50%;
+  z-index: 1;
+  color: #fff;
+  width: 10%;
+  height: 10%;
+  padding: 0;
+  right: 1em;
+  top: 1em;
+  text-align: center;
+}
+
+.tmenu .tmenu-back .m-box .close-btn:hover {
+  background-color: #434242;
+  color: #fff;
+}
+
+.tmenu .tmenu-back .m-box h5 {
+  border-bottom: 1px solid #938a8a4c;
 }
 
 .tmenu .tmenu-back .m-box button {
   cursor: pointer;
   background: transparent;
   border: none;
-  margin: 2px;
+  border-bottom: 1px solid #938a8a4c;
+  text-align: left;
+  padding: .3em 1em;
+  font-size: calc(0.5em + 1vw);
 }
 
 .tmenu .tmenu-back .m-box button:hover {
-  color: #434242;
   cursor: pointer;
-  font-weight: bold;
 }
 /*# sourceMappingURL=ToolBar.css.map */

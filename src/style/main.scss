@@ -1,11 +1,13 @@
 @import "variables/colors.scss";
-body , .App , .root{
+body,
+.App,
+.root {
   height: 100%;
 }
-.hide{
+.hide {
   display: none;
 }
-.show{
+.show {
   display: contents;
 }
 .header {
@@ -28,40 +30,41 @@ body , .App , .root{
     width: 20%;
   }
 }
-.headerMenu{
-  margin-top:calc(2em + 1vw);
+.headerMenu {
+  margin-top: calc(2em + 1vw);
   padding: 0;
   width: 100%;
- 
-  button ,a{
+
+  button,
+  a {
     text-decoration: none;
     border: none;
     color: rgb(149, 149, 149);
     background-color: #fff;
     font-size: calc(0.5em + 1vw);
   }
-  a:hover{
+  a:hover {
     cursor: pointer;
-   color: black;
- }
- .selected{
-  cursor: pointer;
-  color: black;
- }
-
+    color: black;
+  }
+  .selected {
+    cursor: pointer;
+    color: black;
+  }
 }
 
-.Toolbar{
+.Toolbar {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 96%;
+  width: 84%;
   max-width: 440px;
   display: block;
   margin-bottom: calc(0.5em + 1vh);
- .toolbar-box{
-    position: relative;
+  .toolbar-box {
+    z-index: 1;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
@@ -69,35 +72,39 @@ body , .App , .root{
     border-radius: 1.9em;
     height: 2.1em;
     box-shadow: -1px 2px 4px #938282;
-  
-  .search{
-    background-color: $red;
-    border-radius: 50%;
-    height: 3em;
-    width: 3em;
-    bottom: 0.5em;
-    position: relative;
-    svg{
-    color: #fff;
-    box-sizing: border-box;
-  
-    }  
-  }
-  button{
-    border: none;
-    background-color:#fff;
-    color:gray;
-  svg{
-    height: 1.3em;
-    margin: 0;
-    color: $dgray;
-  }
-  }
+
+    .search {
+      background-color: $red;
+      border-radius: 50%;
+      height: 2.5em;
+      width: 2.5em;
+      bottom: 0.5em;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      svg {
+        color: #fff;
+        box-sizing: border-box;
+        height: 1.5em;
+      }
+    }
+    button {
+      border: none;
+      background: none;
+      color: gray;
+      cursor: pointer;
+      svg {
+        height: 1em;
+        margin: 0;
+        color: $dgray;
+      }
+    }
   }
 }
-.Main-box{
-  .Purchase ,.GameInfo{
+.Main-box {
+  .Purchase,
+  .GameInfo {
     padding: 0em 0.5rem;
   }
-  
 }

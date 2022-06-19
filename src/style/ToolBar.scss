@@ -1,60 +1,80 @@
 @import "variables/colors.scss";
-@import"variables/var.scss";
-.show{
-    display: contents;
+@import "variables/var.scss";
+.show {
+  display: contents;
 }
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
-.tmenu{
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-.tmenu-back {
+.tmenu {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  .tmenu-back {
     position: relative;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.751);
+    background-color: rgba(58, 58, 58, 0.62);
     position: fixed;
     top: 0;
     left: 0;
+    transition: 0.3s;
     text-align: -webkit-center;
-    .close-btn{
-        @include closeBtn;
-    }
-    .close-btn:hover{
-        @include closeBtnHover;
-    }
-    .m-box{
-        display: grid;
-        gap: 0.3em;
-        background: #fff;
-        border-radius: 1em;
-        padding: 0px;
-        position: fixed;
-        bottom: 2em;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 96%;
-        max-width: 440px;
 
-        button{
-            cursor: pointer;
-            background: transparent;
-            border: none;
-            margin: 2px;
-        }
-        button:hover{
-            color: $dgray;
-            cursor: pointer;
-            font-weight: bold;
-        }
+    .m-box {
+      display: grid;
+      gap: 0.3em;
+      background: #fff;
+      border-radius: 1em;
+      padding: 1em 0px;
+      position: fixed;
+      bottom: 2em;
+      left: 50%;
+      color: $dgray;
+      transform: translateX(-50%);
+      width: 82%;
+      overflow-y:auto;
+      max-width: 440px;
+      transition: .4s;
+
+     .close-btn {
+        @include closeBtn;
+        position:absolute;
+        background-color: $border;
+        border: 1px solid;
+        border-radius: 50%;
+        z-index: 1;
+        color: #fff;
+        width: 10%;
+        height: 10%;
+        padding: 0;
+        right: 1em;
+        top: 1em;
+        text-align: center;
+      }
+     .close-btn:hover {
+        @include closeBtnHover;
+      }
+      h5{
+        border-bottom: 1px solid $border;
+      }
+      button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $border;
+        text-align: left;
+        padding: .3em 1em;
+        font-size: $font-size;
+      }
+      button:hover {
+        cursor: pointer;
+      }
     }
-}
+  }
 }

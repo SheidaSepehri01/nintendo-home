@@ -1,4 +1,6 @@
-body, .App, .root {
+body,
+.App,
+.root {
   height: 100%;
 }
 
@@ -48,7 +50,8 @@ body, .App, .root {
   width: 100%;
 }
 
-.headerMenu button, .headerMenu a {
+.headerMenu button,
+.headerMenu a {
   text-decoration: none;
   border: none;
   color: #959595;
@@ -67,19 +70,20 @@ body, .App, .root {
 }
 
 .Toolbar {
+  z-index: 1;
   position: fixed;
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 96%;
+  width: 84%;
   max-width: 440px;
   display: block;
   margin-bottom: calc(0.5em + 1vh);
 }
 
 .Toolbar .toolbar-box {
-  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,31 +101,43 @@ body, .App, .root {
 .Toolbar .toolbar-box .search {
   background-color: #e60012;
   border-radius: 50%;
-  height: 3em;
-  width: 3em;
+  height: 2.5em;
+  width: 2.5em;
   bottom: 0.5em;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Toolbar .toolbar-box .search svg {
   color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 1.5em;
 }
 
 .Toolbar .toolbar-box button {
   border: none;
-  background-color: #fff;
+  background: none;
   color: gray;
+  cursor: pointer;
 }
 
 .Toolbar .toolbar-box button svg {
-  height: 1.3em;
+  height: 1em;
   margin: 0;
   color: #434242;
 }
 
-.Main-box .Purchase, .Main-box .GameInfo {
+.Main-box .Purchase,
+.Main-box .GameInfo {
   padding: 0em 0.5rem;
 }
 /*# sourceMappingURL=main.css.map */

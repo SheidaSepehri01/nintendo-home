@@ -1,13 +1,16 @@
 import React, {useState,useEffect} from "react";
 import "../style/slider.css";
-import {  pics} from "../utile/imagechanger";
+import {pics} from "../utile/images.js";
 
 
 
 export const Slider = () => {
   const [src,setSrc] = useState(require("../images/hero.png"));
    // pics.map((elem,index,arr)=>{elem.onClick={}})
-
+   //const [clicked,setClicked] = useStat(false);
+   const childToParent=(childData)=>{
+    //setClicked(childData)
+    }
   return (
     <div className="slider">
     

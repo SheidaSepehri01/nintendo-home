@@ -1,93 +1,3 @@
-@-webkit-keyframes buttonHover {
-  0% {
-    background: #e60012;
-    height: 4em;
-    margin: 0;
-    border-radius: 0.3em;
-  }
-  25% {
-    background: #750909;
-    height: 3em;
-    margin: 1em 0em 1em 0em;
-    border-radius: 0.3em;
-  }
-  50% {
-    background: #750909;
-    height: 4em;
-    margin: 0;
-    border-radius: 0.3em;
-  }
-  75% {
-    background: #750909;
-    height: 3em;
-    margin: 1em 0em 1em 0em;
-    border-radius: 0.3em;
-  }
-  100% {
-    background: #750909;
-    height: 4em;
-    margin: 0;
-    border-radius: 0.3em;
-  }
-}
-
-@keyframes buttonHover {
-  0% {
-    background: #e60012;
-    height: 4em;
-    margin: 0;
-    border-radius: 0.3em;
-  }
-  25% {
-    background: #750909;
-    height: 3em;
-    margin: 1em 0em 1em 0em;
-    border-radius: 0.3em;
-  }
-  50% {
-    background: #750909;
-    height: 4em;
-    margin: 0;
-    border-radius: 0.3em;
-  }
-  75% {
-    background: #750909;
-    height: 3em;
-    margin: 1em 0em 1em 0em;
-    border-radius: 0.3em;
-  }
-  100% {
-    background: #750909;
-    height: 4em;
-    margin: 0;
-    border-radius: 0.3em;
-  }
-}
-
-@-webkit-keyframes spark {
-  0% {
-    display: contents;
-  }
-  50% {
-    display: contents;
-  }
-  100% {
-    display: none;
-  }
-}
-
-@keyframes spark {
-  0% {
-    display: contents;
-  }
-  50% {
-    display: contents;
-  }
-  100% {
-    display: none;
-  }
-}
-
 .hide {
   display: none;
 }
@@ -124,14 +34,26 @@
   width: 100%;
 }
 
-.Purchase .price button,
-.Purchase .price button a {
-  color: #e60012;
-  text-decoration: none;
+.Purchase .price button {
   display: inline;
   padding: 0;
   border: 0;
-  background-color: #fff;
+  background: none;
+  color: #e60012;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.Purchase .price button .sparks {
+  display: none;
+}
+
+.Purchase .price button:hover .sparks,
+.Purchase .price button:focus .sparks {
+  display: contents;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .Purchase .price p {
@@ -199,11 +121,6 @@
   padding: 0;
 }
 
-.Purchase .sparks, .Purchase .spark :active {
-  -webkit-animation: spark;
-          animation: spark;
-}
-
 .GameInfo {
   color: #434242;
   font-size: calc(0.5em + 1vw);
@@ -250,7 +167,7 @@
 
 .GameInfo .exploreTG a {
   color: #fff;
-  font-size: calc( 0.7em + 1vw);
+  font-size: calc(0.7em + 1vw);
   font-weight: bold;
   text-decoration: none;
   -webkit-box-pack: center;
@@ -271,12 +188,6 @@
 .GameInfo .exploreTG:hover {
   cursor: pointer;
   background: #830707;
-  -webkit-animation: buttonHover 1s linear 0s 2;
-          animation: buttonHover 1s linear 0s 2;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transition: all 300ms ease-in-out 0s;
-  transition: all 300ms ease-in-out 0s;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
