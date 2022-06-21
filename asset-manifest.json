@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nintendo-home/static/css/main.952f9c9e.css",
+    "main.js": "/nintendo-home/static/js/main.ed5108a7.js",
+    "static/js/787.f61430c8.chunk.js": "/nintendo-home/static/js/787.f61430c8.chunk.js",
+    "static/media/screenshot05.avif": "/nintendo-home/static/media/screenshot05.89f5f15c291536d147d8.avif",
+    "static/media/screenshot01.avif": "/nintendo-home/static/media/screenshot01.2ad34181d848241ac37c.avif",
+    "static/media/screenshot02.avif": "/nintendo-home/static/media/screenshot02.7ee52fd6c174e7457ff7.avif",
+    "static/media/screenshot03.avif": "/nintendo-home/static/media/screenshot03.0c4989e7e8ddf317b5d1.avif",
+    "static/media/screenshot04.avif": "/nintendo-home/static/media/screenshot04.09c59bef6540fc6093b4.avif",
+    "static/media/screenshot06.avif": "/nintendo-home/static/media/screenshot06.875b3b62ea537fccd039.avif",
+    "static/media/hero.png": "/nintendo-home/static/media/hero.10fc440c129716357278.png",
+    "static/media/my-nintendo-gold-coin.avif": "/nintendo-home/static/media/my-nintendo-gold-coin.96f65d59a506087857d9.avif",
+    "index.html": "/nintendo-home/index.html",
+    "main.952f9c9e.css.map": "/nintendo-home/static/css/main.952f9c9e.css.map",
+    "main.ed5108a7.js.map": "/nintendo-home/static/js/main.ed5108a7.js.map",
+    "787.f61430c8.chunk.js.map": "/nintendo-home/static/js/787.f61430c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.952f9c9e.css",
+    "static/js/main.ed5108a7.js"
+  ]
+}
