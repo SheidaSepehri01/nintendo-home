@@ -14,10 +14,11 @@ body,
 
 .header {
   position: fixed;
+  top: 0;
+  margin-bottom: 1em;
   background-color: #e60012;
   height: 6%;
   width: 100%;
-  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,23 +30,32 @@ body,
           justify-content: space-between;
 }
 
+.header .h-store svg {
+  width: calc(4em + 1vw);
+}
+
 .header a {
-  height: 100%;
-  color: #ffffff;
-  margin: 0.5em;
-  cursor: pointer;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0em 0.3em;
+  height: 100%;
+  color: #ffffff;
+  cursor: pointer;
   text-decoration: none;
-  width: 20%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.header a svg {
+  width: calc(2.5em + 1vw);
 }
 
 .headerMenu {
-  margin-top: calc(2em + 1vw);
+  margin-top: calc(3em + 1vw);
   padding: 0;
   width: 100%;
 }
