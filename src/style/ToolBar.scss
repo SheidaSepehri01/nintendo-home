@@ -6,6 +6,9 @@
 .hide {
   display: none;
 }
+.clearFix{
+  clear: both;
+}
 .tmenu {
   text-align: center;
   width: 100%;
@@ -37,31 +40,43 @@
       left: 50%;
       color: $dgray;
       transform: translateX(-50%);
-      width: 82%;
-      overflow-y:auto;
+      overflow-y: auto;
       max-width: 440px;
-      transition: .4s;
+      transition: 0.4s;
+      height: 50%;
+      width: 67%;
+      align-content: center;
 
-     .close-btn {
+      .close-btn {
         @include closeBtn;
-        position:absolute;
+        position: absolute;
         background-color: $border;
         border: 1px solid;
         border-radius: 50%;
         z-index: 1;
         color: #fff;
-        width: 10%;
-        height: 10%;
+        width: 20px !important;
+        height: 20px !important;
         padding: 0;
         right: 1em;
         top: 1em;
+        justify-content: center;
         text-align: center;
       }
-     .close-btn:hover {
+      .close-btn:hover {
         @include closeBtnHover;
       }
-      h5{
+      h5 {
         border-bottom: 1px solid $border;
+        margin-top: 5em;
+        position: absolute;
+        height: 4em;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       button {
         cursor: pointer;
@@ -69,8 +84,11 @@
         border: none;
         border-bottom: 1px solid $border;
         text-align: left;
-        padding: .3em 1em;
+        padding: 0.3em 1em;
         font-size: $font-size;
+        min-height: 1em;
+        display: flex;
+        align-items: end;
       }
       button:hover {
         cursor: pointer;

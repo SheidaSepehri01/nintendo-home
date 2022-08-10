@@ -45,13 +45,15 @@
   transition: 0.3s;
 }
 
-.Purchase .price button .sparks {
+.Purchase .price button svg .sparks,
+.Purchase .price button svg .heart-filled {
   display: none;
 }
 
-.Purchase .price button:hover .sparks,
-.Purchase .price button:focus .sparks {
-  display: contents;
+.Purchase .price button:hover svg .sparks,
+.Purchase .price Button:hover svg .hearts .heart .heart-filled button:focus svg .sparks,
+.Purchase .price button:focus svg .hearts .heart .heart-filled {
+  display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -88,13 +90,26 @@
   padding: 0 1em;
 }
 
-.Purchase .download {
-  background-color: #e60012;
-  width: 100%;
-  border: none;
+.Purchase .downloadCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.Purchase .download a {
+.Purchase .downloadCol .download {
+  background-color: #e60012;
+  width: 95%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  border-radius: 0.3em;
+}
+
+.Purchase .downloadCol .download a {
   color: #fff;
   font-size: calc(1em + 1vw);
   text-decoration: none;
@@ -110,9 +125,13 @@
           align-items: center;
 }
 
-.Purchase .download svg {
+.Purchase .downloadCol .download img {
   width: 20px;
   margin: 0.3em;
+}
+
+.Purchase .downloadCol .download:hover {
+  background-color: #bd0210;
 }
 
 .Purchase p {
@@ -140,7 +159,7 @@
   margin: 0;
 }
 
-.GameInfo button svg {
+.GameInfo button img {
   height: 00.9em;
 }
 
@@ -163,6 +182,7 @@
   width: 75%;
   height: 3em;
   margin: 1em 0em 1em 0em;
+  border-radius: .5em;
 }
 
 .GameInfo .exploreTG a {
@@ -187,7 +207,7 @@
 
 .GameInfo .exploreTG:hover {
   cursor: pointer;
-  background: #830707;
+  background: #bd0210;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -198,11 +218,21 @@
 }
 
 .GameInfo .gamePic {
-  height: 40%;
+  height: 21em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .GameInfo .gamePic img {
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 /*# sourceMappingURL=Purchase&Gameinfo.css.map */

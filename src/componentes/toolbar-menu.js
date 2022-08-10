@@ -10,6 +10,7 @@ export const TMenu = (props) => {
     <div className='m-box'>
     <button className='close-btn' onClick={()=>{props.childToParent(false)}}>X</button>
         <h5>Menu</h5>
+        
         <button>My Nintendo Store</button>
         <button>Games</button>
         <button>Nintendo Switch</button>

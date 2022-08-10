@@ -12,13 +12,165 @@ body,
   display: contents;
 }
 
+.bgscreenHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: baseline;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  position: fixed;
+  top: 0;
+  min-height: 15%;
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.bgscreenHeader .headerUtils {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  height: 50%;
+  border-bottom: 1px solid #938a8a4c;
+}
+
+.bgscreenHeader .headerUtils button {
+  background: none;
+  border: none;
+  width: 100%;
+  font-size: calc(0.1em + 1vw);
+}
+
+.bgscreenHeader .headerUtils .homeandsearch {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: calc(0.1em + 1vw);
+}
+
+.bgscreenHeader .headerUtils .homeandsearch a {
+  background-color: #e60012;
+  width: 30%;
+}
+
+.bgscreenHeader .headerUtils .homeandsearch a img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+.bgscreenHeader .headerUtils .homeandsearch .searchBar {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0em 1em;
+  border-bottom: 2px solid #e60012;
+}
+
+.bgscreenHeader .headerUtils .homeandsearch .searchBar img {
+  height: 30%;
+  position: relative;
+  top: 0.3em;
+}
+
+.bgscreenHeader .headerUtils .homeandsearch .searchBar img svg {
+  color: #fff;
+}
+
+.bgscreenHeader .headerUtils .homeandsearch .searchBar input {
+  height: 100%;
+  border: none;
+  font-size: calc(0.1em + 1vw);
+  width: 100%;
+}
+
+.bgscreenHeader .headerUtils .header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 40%;
+  margin: 0em 1em;
+}
+
+.bgscreenHeader .headerUtils .header-buttons button {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bgscreenHeader .headerUtils .header-buttons button img {
+  margin: 0em 1em;
+}
+
+.bgscreenHeader .header-menu {
+  font-size: calc(0.1em + 1vw);
+  border-bottom: 1px solid #938a8a4c;
+  min-width: 100%;
+  min-height: 2em;
+}
+
+.bgscreenHeader .header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.bgscreenHeader .header-menu ul li {
+  list-style: none;
+  height: 100%;
+}
+
 .header {
   position: fixed;
   top: 0;
   margin-bottom: 1em;
   background-color: #e60012;
-  height: 6%;
   width: 100%;
+  min-height: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,10 +180,6 @@ body,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.header .h-store svg {
-  width: calc(4em + 1vw);
 }
 
 .header a {
@@ -50,8 +198,12 @@ body,
       align-self: center;
 }
 
-.header a svg {
-  width: calc(2.5em + 1vw);
+.header .h-icon img {
+  width: calc(6em + 1vw);
+}
+
+.header .h-storeIcon img {
+  width: calc(12em + 1vw);
 }
 
 .headerMenu {
@@ -126,11 +278,15 @@ body,
           justify-content: center;
 }
 
-.Toolbar .toolbar-box .search svg {
-  color: #fff;
+.Toolbar .toolbar-box .search img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 1.5em;
+  height: calc(1em + 1vw);
+  color: #fff;
+}
+
+.Toolbar .toolbar-box .search img svg {
+  color: #fff;
 }
 
 .Toolbar .toolbar-box button {
@@ -140,8 +296,8 @@ body,
   cursor: pointer;
 }
 
-.Toolbar .toolbar-box button svg {
-  height: 1em;
+.Toolbar .toolbar-box button img {
+  height: calc(0.7em + 1vw);
   margin: 0;
   color: #434242;
 }
@@ -149,5 +305,51 @@ body,
 .Main-box .Purchase,
 .Main-box .GameInfo {
   padding: 0em 0.5rem;
+}
+
+.footer {
+  background-color: #e60012;
+  border: none;
+  margin-top: 2em;
+  height: 12em;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.footer button {
+  background: none;
+  border: none;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer button img {
+  width: 100%;
+}
+
+.footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 1em;
+  padding: 0;
+  margin: 0em 1em;
+}
+
+.footer ul li {
+  width: 100%;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

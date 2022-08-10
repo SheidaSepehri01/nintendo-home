@@ -6,6 +6,10 @@
   display: none;
 }
 
+.clearFix {
+  clear: both;
+}
+
 .tmenu {
   text-align: center;
   width: 100%;
@@ -43,11 +47,14 @@
   color: #434242;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 82%;
   overflow-y: auto;
   max-width: 440px;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 50%;
+  width: 67%;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .tmenu .tmenu-back .m-box .close-btn {
@@ -61,11 +68,14 @@
   border-radius: 50%;
   z-index: 1;
   color: #fff;
-  width: 10%;
-  height: 10%;
+  width: 20px !important;
+  height: 20px !important;
   padding: 0;
   right: 1em;
   top: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 
@@ -76,6 +86,21 @@
 
 .tmenu .tmenu-back .m-box h5 {
   border-bottom: 1px solid #938a8a4c;
+  margin-top: 5em;
+  position: absolute;
+  height: 4em;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tmenu .tmenu-back .m-box button {
@@ -84,8 +109,15 @@
   border: none;
   border-bottom: 1px solid #938a8a4c;
   text-align: left;
-  padding: .3em 1em;
+  padding: 0.3em 1em;
   font-size: calc(0.5em + 1vw);
+  min-height: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
 .tmenu .tmenu-back .m-box button:hover {

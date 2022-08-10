@@ -1,8 +1,6 @@
 @import "variables/colors.scss";
 @import "variables/var.scss";
 
-
-
 .hide {
   display: none;
 }
@@ -38,15 +36,18 @@
       cursor: pointer;
       transition: 0.3s;
 
-     .sparks{
-       display: none;
-     }
+     svg .sparks,
+     svg .heart-filled {
+        display: none;
+      }
     }
-    button:hover .sparks,
-    button:focus .sparks {
-      display: contents;
+    button:hover svg .sparks,
+    Button:hover svg .hearts .heart .heart-filled button:focus svg .sparks,
+    button:focus svg .hearts .heart .heart-filled {
+      display: block;
       transition: 0.3s;
     }
+
 
     p {
       display: inline;
@@ -73,22 +74,31 @@
       padding: 0 1em;
     }
   }
-  .download {
-    background-color: $red;
-    width: 100%;
-    border: none;
-    a {
-      color: #fff;
-      font-size: $lg-font;
-      text-decoration: none;
-      padding: 0.4em;
-      justify-content: center;
-      display: flex;
-      align-items: center;
+  .downloadCol {
+    display: flex;
+    justify-content: center;
+    .download {
+      background-color: $red;
+      width: 95%;
+      align-self: center;
+      border: none;
+      border-radius: 0.3em;
+      a {
+        color: #fff;
+        font-size: $lg-font;
+        text-decoration: none;
+        padding: 0.4em;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      img {
+        width: 20px;
+        margin: 0.3em;
+      }
     }
-    svg {
-      width: 20px;
-      margin: 0.3em;
+    .download:hover {
+      background-color: $redHover;
     }
   }
   p {
@@ -111,7 +121,7 @@
     font-weight: bold;
     padding: 0;
     margin: 0;
-    svg {
+    img{
       height: 00.9em;
     }
   }
@@ -131,6 +141,7 @@
     width: 75%;
     height: 3em;
     margin: 1em 0em 1em 0em;
+    border-radius: .5em;
     a {
       color: #fff;
       font-size: calc(0.7em + 1vw);
@@ -147,16 +158,21 @@
   }
   .exploreTG:hover {
     cursor: pointer;
-    background: rgb(131, 7, 7);
+    background: $redHover;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
   }
 
   .gamePic {
-    height: 40%;
+    height: 21em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     img {
-      width: 100%;
+      width: 95%;
       height: 100%;
     }
   }
