@@ -1,6 +1,6 @@
 # about this project 
 
-this project is clone of [nintendo home ](https://www.nintendo.com/store/products/stardew-valley-switch/)**mobile moode** 
+this project is clone of [nintendo home ](https://www.nintendo.com/store/products/stardew-valley-switch/)
 
 ### screenShot of the page
 
