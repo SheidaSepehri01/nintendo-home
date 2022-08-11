@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nintendo-home/static/css/main.6f8c278f.css",
+    "main.css": "/nintendo-home/static/css/main.10ae0694.css",
     "main.js": "/nintendo-home/static/js/main.d8694594.js",
     "static/js/787.f61430c8.chunk.js": "/nintendo-home/static/js/787.f61430c8.chunk.js",
     "static/media/screenshot05.avif": "/nintendo-home/static/media/screenshot05.89f5f15c291536d147d8.avif",
@@ -26,12 +26,12 @@
     "static/media/menu.svg": "/nintendo-home/static/media/menu.dda60153ef9236b62de94e4a847f4da6.svg",
     "static/media/plus.svg": "/nintendo-home/static/media/plus.1c10b233eab20a2a65b485d78cbb5da1.svg",
     "static/media/facebook.svg": "/nintendo-home/static/media/facebook.354a886c287a826f654cc430b62c4b8d.svg",
-    "main.6f8c278f.css.map": "/nintendo-home/static/css/main.6f8c278f.css.map",
+    "main.10ae0694.css.map": "/nintendo-home/static/css/main.10ae0694.css.map",
     "main.d8694594.js.map": "/nintendo-home/static/js/main.d8694594.js.map",
     "787.f61430c8.chunk.js.map": "/nintendo-home/static/js/787.f61430c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f8c278f.css",
+    "static/css/main.10ae0694.css",
     "static/js/main.d8694594.js"
   ]
 }
