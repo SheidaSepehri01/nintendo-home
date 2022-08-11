@@ -1,0 +1,17 @@
+  <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            width="24"
+            role="presentation"
+            alt=""
+            data-testid="MinusIcon"
+            color="#bd0210"
+            size="24"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              fill="currentColor"
+              d="M0 12h32v8H0z"
+            ></path>
+          </svg>
