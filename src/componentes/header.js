@@ -18,18 +18,17 @@ export const Header = () => {
               <img src={require("../images/icons/nintendo.svg").default} />
             </a>
             <div className="searchBar">
-            <input
-              type={"search"}
-              placeholder={"search something here..."}
-            ></input>
+              <input
+                type={"search"}
+                placeholder={"search something here..."}
+              ></input>
             </div>
-          
           </div>
           <div className="header-buttons">
             <button>Support</button>
             <button>
-              <img src={require("../images/icons/likes.svg").default} />Wish
-              List
+              <img src={require("../images/icons/likes.svg").default} />
+              Wish List
             </button>
             <button>Cart</button>
             <button>
@@ -38,15 +37,13 @@ export const Header = () => {
             </button>
           </div>
         </div>
-        <div className="header-menu">
-          <ul>
-            <li>My Nintendo Store</li>
-            <li>Games</li>
-            <li>Nintendo Switch</li>
-            <li>Eventes</li>
-            <li>Play Nintendo</li>
-          </ul>
-        </div>
+        <ul className="header-menu">
+          <li>My Nintendo Store</li>
+          <li>Games</li>
+          <li>Nintendo Switch</li>
+          <li>Eventes</li>
+          <li>Play Nintendo</li>
+        </ul>
       </div>
     </>
   );

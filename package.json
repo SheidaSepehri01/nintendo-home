@@ -1,7 +1,7 @@
 {
   "name": "nintendo-home",
   "version": "0.1.0",
-  "homepage": " https://sheidasepehri01.github.io/nintendo-home/",
+  "homepage": "https://sheidasepehri01.github.io/nintendo-home/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
