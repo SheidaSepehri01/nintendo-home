@@ -74,12 +74,25 @@ body,
 .bgscreenHeader .headerUtils .homeandsearch a {
   background-color: #e60012;
   width: 30%;
+  background-color: #e60012;
+  width: 20%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bgscreenHeader .headerUtils .homeandsearch a img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 60%;
+  width: 60%;
 }
 
 .bgscreenHeader .headerUtils .homeandsearch .searchBar {
@@ -129,6 +142,7 @@ body,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-weight: 600;
 }
 
 .bgscreenHeader .header-buttons button img {
@@ -156,6 +170,7 @@ body,
 .bgscreenHeader .header-menu li {
   list-style: none;
   height: 100%;
+  font-weight: 600;
 }
 
 .header {

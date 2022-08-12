@@ -49,9 +49,16 @@ body,
       a {
         background-color: $red;
         width: 30%;
+        background-color: #e60012;
+        width: 20%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         img {
-          object-fit: cover;
-          width: 100%;
+          object-fit: contain;
+          height: 60%;
+          width: 60%;
         }
       }
       .searchBar {
@@ -83,9 +90,10 @@ body,
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      font-weight: 600;
       img {
         min-height: 2em;
-        object-fit:scale-down;
+        object-fit: scale-down;
         margin: 0em 1em;
       }
     }
@@ -103,6 +111,7 @@ body,
     li {
       list-style: none;
       height: 100%;
+      font-weight: 600;
     }
   }
 }
