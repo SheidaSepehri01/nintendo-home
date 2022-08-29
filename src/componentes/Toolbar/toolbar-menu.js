@@ -1,9 +1,9 @@
 import React, {useState}from 'react'
-import "../style/ToolBar.css"
+import "./ToolBar.css"
 
 export const TMenu = (props) => {
  // const [clicked ,setClicked]=useState(false)
- console.log(props.clicked)
+
   return (
     <div className={props.clicked ? 'show tmenu ': 'hide' } >
     <div className='tmenu-back'>

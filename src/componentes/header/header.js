@@ -1,21 +1,23 @@
 import React from "react";
-import "../style/main.css";
+import "../../style/main.css";
 export const Header = () => {
   return (
     <>
       <div className="header">
         <a className="h-icon" href="/">
-          <img src={require("../images/icons/nintendo.svg").default} />
+          <img src={require("../../images/icons/nintendo.svg").default} />
         </a>
         <a className="h-storeIcon" href="/">
-          <img src={require("../images/icons/myNintendoStore.svg").default} />
+          <img
+            src={require("../../images/icons/myNintendoStore.svg").default}
+          />
         </a>
       </div>
       <div className="bgscreenHeader">
         <div className="headerUtils">
           <div className="homeandsearch">
             <a className="h-icon" href="/">
-              <img src={require("../images/icons/nintendo.svg").default} />
+              <img src={require("../../images/icons/nintendo.svg").default} />
             </a>
             <div className="searchBar">
               <input
@@ -25,14 +27,20 @@ export const Header = () => {
             </div>
           </div>
           <div className="header-buttons">
-            <button>Support</button>
             <button>
-              <img src={require("../images/icons/likes.svg").default} />
+              <img src={require("../../images/icons/support.svg").default} />
+              Support
+            </button>
+            <button>
+              <img src={require("../../images/icons/likes.svg").default} />
               Wish List
             </button>
-            <button>Cart</button>
             <button>
-              <img src={require("../images/icons/user.svg").default} />
+              <img src={require("../../images/icons/cart.svg").default} />
+              Cart
+            </button>
+            <button>
+              <img src={require("../../images/icons/user.svg").default} />
               Log in/Sign Up
             </button>
           </div>

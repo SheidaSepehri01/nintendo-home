@@ -55,6 +55,12 @@ body,
   border: none;
   width: 100%;
   font-size: calc(0.1em + 1vw);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.bgscreenHeader .headerUtils button:hover {
+  color: #e60012;
 }
 
 .bgscreenHeader .headerUtils .homeandsearch {

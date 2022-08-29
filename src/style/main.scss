@@ -37,8 +37,11 @@ body,
       border: none;
       width: 100%;
       font-size: calc(0.1em + 1vw);
+      transition: .3s;
     }
-
+    button:hover {
+    color: $red;
+    }
     .homeandsearch {
       width: 50%;
       display: flex;

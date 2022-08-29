@@ -1,8 +1,8 @@
-@import "variables/colors.scss";
-@import "variables/var.scss";
+@import "../../style/variables/colors.scss";
+@import "../../style/variables/var.scss";
 
 .hide {
-  display: none;
+  display: none !important;
 }
 .show {
   display: contents;
@@ -11,7 +11,11 @@
   padding: 0;
   width: 100%;
   color: $dgray;
-
+ 
+  button:hover {
+    background-color: $redHover;
+    transition: .3s;
+  }
   span {
     color: gray;
     border-bottom: 2px solid $red;
@@ -35,19 +39,7 @@
       color: $red;
       cursor: pointer;
       transition: 0.3s;
-
-     svg .sparks,
-     svg .heart-filled {
-        display: none;
-      }
     }
-    button:hover svg .sparks,
-    Button:hover svg .hearts .heart .heart-filled button:focus svg .sparks,
-    button:focus svg .hearts .heart .heart-filled {
-      display: block;
-      transition: 0.3s;
-    }
-
 
     p {
       display: inline;

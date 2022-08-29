@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../style/main.css";
+import "../../style/main.css";
 import { TMenu } from "./toolbar-menu";
 export const ToolBar = (props) => {
   const [Clicked, setClicked] = useState(false);
@@ -12,7 +12,7 @@ export const ToolBar = (props) => {
             props.childToParent(true);
           }}
         >
-          <img src={require("../images/icons/menu.svg").default} alt="menu" />
+          <img src={require("../../images/icons/menu.svg").default} alt="menu" />
         </button>
         <div
           className={Clicked ? "show" : "hide"}
@@ -23,23 +23,23 @@ export const ToolBar = (props) => {
           <TMenu/>
         </div>
         <button>
-          <img src={require("../images/icons/likes.svg").default} alt="likes" />
+          <img src={require("../../images/icons/likes.svg").default} alt="likes" />
         </button>
         <button className="search">
           <img
-            src={require("../images/icons/search.svg").default}
+            src={require("../../images/icons/search.svg").default}
             alt="search"
           />
         </button>
         <button>
           <img
-            src={require("../images/icons/shoppingCart.svg").default}
+            src={require("../../images/icons/shoppingCart.svg").default}
             alt="Shopping cart"
           />
         </button>
         <button>
           <img
-            src={require("../images/icons/user.svg").default}
+            src={require("../../images/icons/user.svg").default}
             alt="user Acount"
           />
         </button>

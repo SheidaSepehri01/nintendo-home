@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { Header } from "./componentes/header";
-import { MainBox } from "./componentes/MainBox";
-import { ToolBar } from "./componentes/ToolBar";
-import { TMenu } from "./componentes/toolbar-menu";
-import { Footer } from "./componentes/footer";
+import { Header } from "./componentes/header/header";
+import { MainBox } from "./componentes/mainBox/MainBox";
+import { ToolBar } from "./componentes/Toolbar/ToolBar";
+import { TMenu } from "./componentes/Toolbar/toolbar-menu";
+import { Footer } from "./componentes/footer/footer";
 import "./style/main.css";
 import "./style/responsive/responsive.css";
 

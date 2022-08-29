@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "../style/Purchase&Gameinfo.css";
+import "./Purchase&Gameinfo.css";
 import { motion } from "framer-motion";
 
 export const Purchase = () => {
   const [clicked, setClicked] = useState(false);
   const [Hover, setHover] = useState(false);
-  console.log(Hover);
+ 
   return (
     <div className="Purchase">
       <span>Nintendo Switch</span>
@@ -37,31 +37,31 @@ export const Purchase = () => {
                       d="M27 38.9c-.4 0-.6-.1-.8-.4L16.7 29c-1.8-1.8-2.7-3.8-2.7-6 0-4.4 3.5-8 7.9-8 1.9 0 3.7.8 5.1 2.3 1.4-1.4 3.2-2.3 5.1-2.3 4.4 0 7.9 3.6 7.9 8 0 2.6-1.5 4.6-2.7 6.1l-9.5 9.4c-.2.3-.6.4-.8.4zm-5.1-21.4c-3.1 0-5.6 2.5-5.6 5.6 0 1.9 1.1 3.3 2 4.3l8.6 8.7 8.5-8.6c1.4-1.5 2.1-3 2.1-4.4 0-3.1-2.5-5.6-5.6-5.6-1.5 0-3 1-4.1 2.5-.5.6-1.4.6-1.9 0-1-1.6-2.4-2.5-4-2.5z"
                     ></path>
                     <path
-                      className={ clicked ?"heart heart-filled":''}
+                      className={ clicked ?"heart heart-filled":'heart heart-filled hide'}
                       fillRule="currentColor"
                       d="M32.1 15.1c-1.9 0-3.7.8-5.1 2.3-1.4-1.4-3.2-2.3-5.1-2.3-4.4 0-7.9 3.6-7.9 8 0 2.1.9 4.2 2.7 6l9.5 9.5c.2.2.5.4.8.4.2 0 .6-.1.8-.4l9.5-9.4c1.2-1.4 2.7-3.5 2.7-6.1 0-4.4-3.5-8-7.9-8z"
                     ></path>
                   </g>
-                  <g className={clicked ?"sparks":''}>
+                  <g className={clicked ?"sparks":'sparks hide'}>
                     <path
                       className="spark"
                       d="M27 8V0M27 46v8"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                     <path
                       className="spark"
                       d="M41.171 12.828l5.657-5.657M12.829 12.828L7.171 7.172"
-                      stroke-width="1.99998"
+                      strokeWidth="1.99998"
                     ></path>
                     <path
                       className="spark"
                       d="M46 27h8M8 27H0"
-                      stroke-width="2"
+                      strokeWidth="2"
                     ></path>
                     <path
-                      class="spark"
+                      className="spark"
                       d="M41.172 41.172l5.657 5.656M12.829 41.171l-5.657 5.657"
-                      stroke-width="1.99998"
+                      strokeWidth="1.99998"
                     ></path>
                   </g>
                 </svg>
@@ -72,7 +72,7 @@ export const Purchase = () => {
             <div className="points">
               <img
                 className="gold-coin"
-                src={require("../images/my-nintendo-gold-coin.avif")}
+                src={require("../../images/my-nintendo-gold-coin.avif")}
                 alt="gold coin"
               />
               <p>Eligible for up to 75 Gold Points</p>
@@ -98,7 +98,7 @@ export const Purchase = () => {
               type="download"
             >
               <a href="#">
-                <img src={require("../images/icons/download.svg").default} alt="download" />
+                <img src={require("../../images/icons/download.svg").default} alt="download" />
                 Direct download
               </a>
             </motion.button>

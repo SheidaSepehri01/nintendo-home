@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import "../style/Purchase&Gameinfo.css";
+import "./Purchase&Gameinfo.css";
 
 export const GameInfo = () => {
   const [moreClicked, setClicked] = useState(false);
@@ -24,7 +24,7 @@ export const GameInfo = () => {
       >
 
         <img
-          src={require("../images/icons/plus.svg").default}
+          src={require("../../images/icons/plus.svg").default}
           alt="read more"
         />
         <span> Read More..</span>
@@ -61,7 +61,7 @@ export const GameInfo = () => {
         </div>
         <button onClick={() => setClicked(false)}>
         <img
-          src={require("../images/icons/minus.svg").default}
+          src={require("../../images/icons/minus.svg").default}
           alt="read less"
         />
           <span> Read less</span>
@@ -69,7 +69,7 @@ export const GameInfo = () => {
       </div>
       </div>
       <div className="gamePic">
-        <img src={require("../images/hero.png")} />
+        <img src={require("../../images/hero.png")} />
       </div>
     </div>
   );

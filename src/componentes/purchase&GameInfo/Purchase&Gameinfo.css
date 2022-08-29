@@ -1,5 +1,5 @@
 .hide {
-  display: none;
+  display: none !important;
 }
 
 .show {
@@ -10,6 +10,12 @@
   padding: 0;
   width: 100%;
   color: #434242;
+}
+
+.Purchase button:hover {
+  background-color: #bd0210;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 .Purchase span {
@@ -41,19 +47,6 @@
   background: none;
   color: #e60012;
   cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.Purchase .price button svg .sparks,
-.Purchase .price button svg .heart-filled {
-  display: none;
-}
-
-.Purchase .price button:hover svg .sparks,
-.Purchase .price Button:hover svg .hearts .heart .heart-filled button:focus svg .sparks,
-.Purchase .price button:focus svg .hearts .heart .heart-filled {
-  display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
