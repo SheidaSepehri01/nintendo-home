@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nintendo-home/static/css/main.10ae0694.css",
-    "main.js": "/nintendo-home/static/js/main.d8694594.js",
+    "main.css": "/nintendo-home/static/css/main.99f723fc.css",
+    "main.js": "/nintendo-home/static/js/main.73865b63.js",
     "static/js/787.f61430c8.chunk.js": "/nintendo-home/static/js/787.f61430c8.chunk.js",
     "static/media/screenshot05.avif": "/nintendo-home/static/media/screenshot05.89f5f15c291536d147d8.avif",
     "static/media/screenshot01.avif": "/nintendo-home/static/media/screenshot01.2ad34181d848241ac37c.avif",
@@ -14,8 +14,10 @@
     "static/media/myNintendoStore.svg": "/nintendo-home/static/media/myNintendoStore.3aa1bf436ee5bbed756431bc640dd064.svg",
     "static/media/instagram.svg": "/nintendo-home/static/media/instagram.90d3b2880eabd9afc95f41c253c2ae86.svg",
     "static/media/nintendo.svg": "/nintendo-home/static/media/nintendo.7d74e992ae493460952bfeb5a4898c5c.svg",
+    "static/media/support.svg": "/nintendo-home/static/media/support.642e4065d579b5b37bf4e07f5e3d2544.svg",
     "static/media/shoppingCart.svg": "/nintendo-home/static/media/shoppingCart.11178b3f56dc9f5840ed9e8839eef0ad.svg",
     "static/media/download.svg": "/nintendo-home/static/media/download.4fe49ed63823e7d91c91f42a1b059623.svg",
+    "static/media/cart.svg": "/nintendo-home/static/media/cart.da8d1b270bf2e6927cd31ab00c8a4e9a.svg",
     "index.html": "/nintendo-home/index.html",
     "static/media/likes.svg": "/nintendo-home/static/media/likes.65cee5f3c94a66fe4ac648ce75d773d2.svg",
     "static/media/search.svg": "/nintendo-home/static/media/search.4a2461f3adefe1250d98ad2aa99dfffd.svg",
@@ -26,12 +28,12 @@
     "static/media/menu.svg": "/nintendo-home/static/media/menu.dda60153ef9236b62de94e4a847f4da6.svg",
     "static/media/plus.svg": "/nintendo-home/static/media/plus.1c10b233eab20a2a65b485d78cbb5da1.svg",
     "static/media/facebook.svg": "/nintendo-home/static/media/facebook.354a886c287a826f654cc430b62c4b8d.svg",
-    "main.10ae0694.css.map": "/nintendo-home/static/css/main.10ae0694.css.map",
-    "main.d8694594.js.map": "/nintendo-home/static/js/main.d8694594.js.map",
+    "main.99f723fc.css.map": "/nintendo-home/static/css/main.99f723fc.css.map",
+    "main.73865b63.js.map": "/nintendo-home/static/js/main.73865b63.js.map",
     "787.f61430c8.chunk.js.map": "/nintendo-home/static/js/787.f61430c8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.10ae0694.css",
-    "static/js/main.d8694594.js"
+    "static/css/main.99f723fc.css",
+    "static/js/main.73865b63.js"
   ]
 }
