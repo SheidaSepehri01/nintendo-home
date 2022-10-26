@@ -8,13 +8,14 @@ export const Slider = () => {
       <div className="full-img">
         <img className="big-img" src={src} alt="stardev vally" />
       </div>
-      <div className="thumb" onClick={(e) => setSrc(`${e.target.src}`)}>
+      <div className="thumb" >
         {imgSrc.map((link) =>{ 
         return(
           <img
           key={imgSrc.indexOf(link)}
             src={`${link}`}
             alt="stardew vally image"
+            onClick={() => setSrc(`${link}`)}
           />
         )})}
       </div>
